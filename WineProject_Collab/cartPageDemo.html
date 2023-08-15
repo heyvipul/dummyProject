@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/847d0b0834.js" crossorigin="anonymous"></script>
+    <title>Cart Page</title>
+     <!-- Nunito font link part -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=PT+Mono&display=swap" rel="stylesheet">
+     <!-- font end -->
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./Components/navbar.css">
+    <link rel="stylesheet" href="./Components/footer.css">
+    <link rel="icon" href="./Images/mine wine logo.jpg">
+    <style>
+        .checkoutButton{
+            width:80%;
+            height:40px;
+            margin-left: 73px;
+            font-family: 'PT Mono';;
+            border: none;
+
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 20px;
+            box-sizing: border-box;
+            min-height: 100vh;
+            background-color: #fff8e9;
+        }
+        .cart-page {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            background-color: #fff8e9;
+            box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+            border: 1px solid grey;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="explorenavbar"></div>  
+    
+    <div class="container">
+        <div class="cart-page">
+            <!-- JavaScript will populate this section with cart items -->
+        </div>
+    </div>
+    <hr>
+
+    <div id="container_7">
+        <div>
+            <h4>CATALOG</h4>
+            <p>Red wine</p>
+            <p>White wine</p>
+            <p>Rose wine</p>
+            <p>Sparkling wine</p>
+            <p>Promotions</p>
+            <p>Sets and Gifts</p>
+        </div>
+        <div>
+            <h4>SUPPORT</h4>
+            <p>FAQ</p>
+            <p><a href="">Terms of use</a></p>
+            <p><a href="">Privacy Policy</a></p>
+            <p>Delivery and payment</p>
+            <p>Return and exchange</p>
+        </div>
+        <div>
+            <h4>OUR COMPANY</h4>
+            <p><a href="">About us</a></p>
+            <p>Contact us</p>
+            <p>Reviews</p>
+            <p>Blog and news</p>
+            <p>Loyalty program</p>
+            <p>Wine subscription</p>
+        </div>
+        <div>
+            <h4>CONTACT</h4>
+            <p>0 800 123 456</p>
+            <p>info@minewine.com</p>
+            
+            <h4>ADDRESS :</h4>
+            <p>Ukraine</p>
+            <p>kyiv,Bazhana St,17</p>
+            
+            <h4>WORKING HOURS :</h4>
+            <p>Mon-Fri 09:00-20:00</p>
+            <p>Sat-Sun 10:00-18:00</p>
+            <p><i class="fa-brands fa-instagram icon"></i> <i class="fa-brands fa-telegram icon"></i></p>
+        </div>
+        <div>
+            <h4>Subscribe to our newsletter</h4>
+            <p>And get -20% on you first order</p>
+            <input id="input_email" type="email" placeholder="example@gmail.com">
+            <button>subscribe</button>
+        </div>
+      </div>
+      <hr>
+      <div id="bottom_footer">
+        <h1>Mine Vine</h1>
+        <div>
+            <p>We only sell Alcohol to Adults 21+</p>
+            <p>@MineVine 2023. All Rights Reserved</p>
+        </div>
+      </div>
+      
+
+</body>
+
+</html>
+<script src="./script.js"></script>
+<script type="module">
+
+    import navbar from "./Components/navbar.js"
+    let navbar_container = document.getElementById("explorenavbar");
+    navbar_container.innerHTML = navbar();
+
+    import footer from "./Components/footer.js"
+    let footer_container = document.getElementById("footer");
+    footer_container.innerHTML = footer();
+</script>

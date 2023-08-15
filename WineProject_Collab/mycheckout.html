@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/mycheckout.css">
+    <!-- <link rel="stylesheet" href="./navbar.css"> -->
+    <script src="https://kit.fontawesome.com/618d9878ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Components/navbar.css">
+    <link rel="stylesheet" href="./Components/footer.css">
+    <link rel="icon" href="./Images/mine wine logo.jpg">
+</head>
+<body>
+    
+    <div id="explorenavbar"></div>
+    </div>
+    <div id="payment_detail">
+        <h3>CHECKOUT PAGE : </h3>
+        <div id="main">
+            <div id="address">
+                <div id="address_detail">
+                    <form action="" id="detail">
+                        <h3>Add address</h3>
+                        <input type="text" id="name" placeholder="Full Name">
+                        <input type="number" id="pin" oninput = fetchPin() placeholder="Pin Code">
+                        <p id="pinErr"></p>
+                        <input type="text" id="lane1" placeholder="Address Lane 1">
+                        <input type="text" id="lane2" value="" placeholder="Address Lane 2">
+                        <input type="text" id="dist" value="" placeholder="District">
+                        <input type="number" id="mobile" placeholder="Enter Mobile Number">
+                        <input type="button" id="add" value="ADD ADDRESS">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="footer">
+
+    </div>
+</body>
+</html>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="./script/mycheckout.js"></script>
+<script type="module">
+
+    import navbar from "./Components/navbar.js"
+    let navbar_container = document.getElementById("explorenavbar");
+    navbar_container.innerHTML = navbar();
+
+    import footer from "./Components/footer.js"
+    let footer_container = document.getElementById("footer");
+    footer_container.innerHTML = footer();
+</script>

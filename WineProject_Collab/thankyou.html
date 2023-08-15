@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Popup Example</title>
+    <link rel="icon" href="./Images/mine wine logo.jpg">
+    <style>
+    /* Add your desired styles here */
+    .modal {
+        display: block;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+        background-color: white;
+        margin: 15% auto;
+        border: 1px solid #888;
+        width: 60%;
+        text-align: center;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .modal-info {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        background-color: #FFF8E9;
+
+    }
+
+    .image-section {
+        width: 50%;
+    }
+    .image-section img {
+        width: 100%;
+    }
+    .continue-shopping {
+        background-color: red;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        width: 190px;
+    }
+
+    .text-section{
+        text-align: center;
+        font-family:'PT Mono', monospace;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- <button id="paymentButton">Make Payment</button> -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-info">
+                <div class="image-section">
+                    <img src="https://w0.peakpx.com/wallpaper/315/11/HD-wallpaper-food-still-life-bottle-bread-cheese-glass-nut-olive-wine-thumbnail.jpg" alt="">
+                </div>
+                <div class="text-section">
+                    <h4>Thank you for your purchase!</h4>
+                    <p>
+                        Your order number is 87556467
+                    </p>
+                    <p>You can find detail in a confirmation email or your account</p>
+                    <a class="continue-shopping" href="index.html">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+// Get the modal element
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var paymentButton = document.getElementById("paymentButton");
+
+// Get the <span> element that closes the modal
+var closeBtn = document.getElementsByClassName("close")[0];
+
+// Open the modal
+// paymentButton.addEventListener("click", function() {
+//     modal.style.display = "block";
+// });
+
+// Close the modal when the close button is clicked
+closeBtn.addEventListener("click", function() {
+    modal.style.display = "none";
+});
+
+// Close the modal when the user clicks anywhere outside of it
+window.addEventListener("click", function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+});
+</script>

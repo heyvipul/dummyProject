@@ -29,11 +29,11 @@
   }
   #container_7 button:hover{
     cursor: pointer;
-    color: red;
+    color: #BF0D12;
   }
   #container_7 > div  a:hover,p:hover{
     cursor: pointer;
-    color: red;
+    color: #BF0D12;
   }
   #bottom_footer{
     display: flex;
@@ -45,6 +45,7 @@
   #bottom_footer h1{
     font-size: 110px;
     margin: 0;
+    font-family: 'PT Mono', sans-serif;
   }
   #bottom_footer div > p{
     font-size: 15px;

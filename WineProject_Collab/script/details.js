@@ -152,8 +152,9 @@ if(button2.style.borderColor="gray"){
 
       cart.addEventListener("click",function(){
         var kart = JSON.parse(localStorage.getItem("cart")) || [];
-  kart.push(details);
-  localStorage.setItem("cart", JSON.stringify(kart));
+        details.quantity = 1;
+        kart.push(details);
+        localStorage.setItem("cart", JSON.stringify(kart));
   
   const cartPopup = document.createElement("div");
   cartPopup.setAttribute("class", "cart-popup");

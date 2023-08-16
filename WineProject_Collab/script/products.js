@@ -6,7 +6,8 @@ var products=[
        category : "White Wine",
        region : "Italy",
        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Italy_with_border.svg/1500px-Flag_of_Italy_with_border.svg.png",
-       rating : "4"
+       rating : "4",
+       id: "1",
     },
     {
        img_url:"https://images.vivino.com/thumbs/pOX7eUpkTr2VWztQ-XiK-A_pb_x600.png",
@@ -15,7 +16,8 @@ var products=[
        category : "Red Wine",
        region : "California",
        flag: "https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg",
-       rating : "5"
+       rating : "5",
+       id: "2",
     },
     {
        img_url:"https://images.vivino.com/thumbs/ACHHYH3HThK4zxiB61-6GQ_pb_x600.png",
@@ -24,7 +26,8 @@ var products=[
        category : "Red Wine",
        region : "California",
        flag: "https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg",
-       rating : "3"
+       rating : "3",
+       id: "3",
     },
     {
        img_url:"https://images.vivino.com/thumbs/OpZa3okqQzuG6HUbGkusqQ_pb_x600.png",
@@ -33,7 +36,8 @@ var products=[
        category : "Red Wine",
        region : "California",
        flag: "https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg",
-       rating : "4"
+       rating : "4",
+       id: "4",
     },
     {
        img_url:"https://images.vivino.com/thumbs/uQTd7d5OT9yWMBsFGZiCAg_pb_x600.png",
@@ -42,7 +46,8 @@ var products=[
        category : "Red Wine",
        region : "USA",
        flag: "https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg",
-       rating : "5"
+       rating : "5",
+       id: "5",
     },
     {
        img_url:"https://images.vivino.com/thumbs/8Zw4qf4IQA-MFtP8rf1QVA_pb_x600.png",
@@ -51,7 +56,8 @@ var products=[
        category : "Red Wine",
        region : "California",
        flag: "https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg",
-       rating : "3"
+       rating : "3",
+       id: "6",
     },
     {
        img_url:"https://images.vivino.com/thumbs/H6rdjIGBTmOv3vfhGWi7bQ_pb_x600.png",
@@ -60,7 +66,8 @@ var products=[
        category : "White Wine",
        region : "Italy",
        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Italy_with_border.svg/1500px-Flag_of_Italy_with_border.svg.png",
-       rating : "4"
+       rating : "4",
+       id: "7",
     },
     {
        img_url:"https://images.vivino.com/thumbs/JJBiWZzlTwaMxgjHWUbqFQ_pb_x600.png",
@@ -69,7 +76,8 @@ var products=[
        category : "White Wine",
        region : "Italy",
        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Italy_with_border.svg/1500px-Flag_of_Italy_with_border.svg.png",
-       rating : "5"
+       rating : "5",
+       id: "8",
     },
     {
        img_url:"https://images.vivino.com/thumbs/XBoVHUw-RCeZe0m9PpG5hA_pb_x600.png",
@@ -78,7 +86,8 @@ var products=[
        category : "White Wine",
        region : "Spain",
        flag : "https://e0.pxfuel.com/wallpapers/630/608/desktop-wallpaper-spain-flag-in-collection.jpg",
-       rating : "3"
+       rating : "3",
+       id: "9",
     },
     {
        img_url:"https://images.vivino.com/thumbs/3wQt8GhoSxGQ0AbWV37dqQ_pb_x600.png",
@@ -87,7 +96,8 @@ var products=[
        category : "White Wine",
        region : "France",
        flag : "https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg",
-       rating : "3"
+       rating : "3",
+       id: "10",
     },
     {
        img_url:"https://images.vivino.com/thumbs/ELCRa1lkSPir1NHDhXHAWw_pb_x600.png",
@@ -96,7 +106,8 @@ var products=[
        category : "Sparkling Wine",
        region : "Italy",
        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Italy_with_border.svg/1500px-Flag_of_Italy_with_border.svg.png",
-       rating : "4"
+       rating : "4",
+       id: "11",
     },
     {
        img_url:"https://images.vivino.com/thumbs/PipH7r6rQpGWzg7_uKuI8Q_pb_x600.png",
@@ -105,7 +116,8 @@ var products=[
        category : "Sparkling Wine",
        region : "California",
        flag: "https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg",
-       rating : "4"
+       rating : "4",
+       id: "12",
     },
     {
        img_url:"https://images.vivino.com/thumbs/6IZUajd7Trm-EbAvcp1PFA_pb_x600.png",
@@ -114,7 +126,8 @@ var products=[
        category : "Sparkling Wine",
        region : "France",
        flag : "https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg",
-       rating : "5"
+       rating : "5",
+       id: "13",
     },
     {
        img_url:"https://images.vivino.com/thumbs/JnpuAaslSdOiF4HhODi8Fw_pb_x600.png",
@@ -123,7 +136,8 @@ var products=[
        category : "Sparkling Wine",
        region : "France",
        flag : "https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg",
-       rating : "5"
+       rating : "5",
+       id: "14",
     },
     {
        img_url:"https://images.vivino.com/thumbs/6bnAMk80RyGkRz9Sv6wWsg_pb_x600.png",
@@ -132,7 +146,8 @@ var products=[
        category : "Dessert Wine",
        region : "Spain",
        flag : "https://e0.pxfuel.com/wallpapers/630/608/desktop-wallpaper-spain-flag-in-collection.jpg",
-       rating : "3"
+       rating : "3",
+       id: "15",
     },
     {
       img_url:"https://images.vivino.com/thumbs/NqcQ0QLfRFGWVovauStsYA_pb_x600.png",
@@ -141,7 +156,8 @@ var products=[
       category : "Sparkling Wine",
       region : "Spain",
       flag : "https://e0.pxfuel.com/wallpapers/630/608/desktop-wallpaper-spain-flag-in-collection.jpg",
-      rating : "4"
+      rating : "4",
+      id: "16",
    },
    {
       img_url:"https://images.vivino.com/thumbs/iTGNxjTUSmKGYNuijyPI9g_pb_x600.png",
@@ -150,7 +166,8 @@ var products=[
       category : "Sparkling Wine",
       region : "Spain",
       flag : "https://e0.pxfuel.com/wallpapers/630/608/desktop-wallpaper-spain-flag-in-collection.jpg",
-      rating : "5"
+      rating : "5",
+      id: "17",
    },
    {
       img_url:"https://images.vivino.com/thumbs/MjYjIyhYRN67_CN4ceewsA_pb_x600.png",
@@ -159,7 +176,8 @@ var products=[
       category : "Sparkling Wine",
       region : "Italy",
       flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Italy_with_border.svg/1500px-Flag_of_Italy_with_border.svg.png",
-      rating : "3"
+      rating : "3",
+      id: "18",
    },
    {
       img_url:"https://images.vivino.com/thumbs/68GwT1tETq-4QomEG6GRmQ_pb_x600.png",
@@ -168,7 +186,8 @@ var products=[
       category : "Dessert Wine",
       region : "Italy",
       flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Italy_with_border.svg/1500px-Flag_of_Italy_with_border.svg.png",
-      rating : "5"
+      rating : "5",
+      id: "19", 
    },
    {
       img_url:"https://images.vivino.com/thumbs/cMo6yG3sQ6m8BWd7rRUtpA_pb_x600.png",
@@ -177,7 +196,8 @@ var products=[
       category : "Dessert Wine",
       region : "Italy",
       flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Italy_with_border.svg/1500px-Flag_of_Italy_with_border.svg.png",
-      rating : "4"
+      rating : "4",
+      id: "20", 
    },
    {
       img_url:"https://images.vivino.com/thumbs/wO1C14kmR1ifpeTxo3oGKg_pb_x600.png",
@@ -186,7 +206,8 @@ var products=[
       category : "Dessert Wine",
       region : "Portugal",
       flag : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/255px-Flag_of_Portugal.svg.png",
-      rating : "5"
+      rating : "5",
+      id: "21",
    },
    {
       img_url:"https://images.vivino.com/thumbs/HbkdNNuLTSWZI0ZbkQmR9g_pb_x600.png",
@@ -195,7 +216,8 @@ var products=[
       category : "Dessert Wine",
       region : "Portugal",
       flag : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/255px-Flag_of_Portugal.svg.png",
-      rating : "3"
+      rating : "3",
+      id: "22",
    },
    {
       img_url:"https://images.vivino.com/thumbs/U_yFsQPETFugPTkDSum6Lg_pb_x600.png",
@@ -204,7 +226,8 @@ var products=[
       category : "Dessert Wine",
       region : "Portugal",
       flag : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/255px-Flag_of_Portugal.svg.png",
-      rating : "4"
+      rating : "4",
+      id: "23",
    },
    {
       img_url:"https://images.vivino.com/thumbs/2yTTT0yJRy-JuDECGUlD6A_pb_x600.png",
@@ -213,7 +236,8 @@ var products=[
       category : "Dessert Wine",
       region : "Portugal",
       flag : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/255px-Flag_of_Portugal.svg.png",
-      rating : "5"
+      rating : "5",
+      id: "24",
    },
    {
       img_url:"https://images.vivino.com/thumbs/T0wbciiSRBiND3L5087_eQ_pb_x600.png",
@@ -222,7 +246,8 @@ var products=[
       category : "Dessert Wine",
       region : "France",
       flag : "https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg",
-      rating : "5"
+      rating : "5",
+      id: "25",
    },
    {
       img_url:"https://images.vivino.com/thumbs/JUPSWgnjTO6Vrzvb4waU5g_pb_x600.png",
@@ -231,7 +256,8 @@ var products=[
       category : "Rose Wine",
       region : "California",
       flag: "https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg",
-      rating : "4"
+      rating : "4",
+      id: "26",
    },
    {
       img_url:"https://images.vivino.com/thumbs/BqF3So1gTpibOAgaWN3Enw_pb_x600.png",
@@ -240,7 +266,8 @@ var products=[
       category : "Rose Wine",
       region : "France",
       flag : "https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg",
-      rating : "3"
+      rating : "3",
+      id: "27",
    },
    {
       img_url:"https://images.vivino.com/thumbs/F2LKOZYnRQS-TRAIlkyjbQ_pb_x600.png",
@@ -249,7 +276,8 @@ var products=[
       category : "Rose Wine",
       region : "USA",
       flag: "https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg",
-      rating : "5"
+      rating : "5",
+      id: "28",
    },
    {
       img_url:"https://images.vivino.com/thumbs/quBWsfOmT325hCNaNkRrVQ_pb_x600.png",
@@ -258,7 +286,8 @@ var products=[
       category : "Rose Wine",
       region : "France",
       flag : "https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg",
-      rating : "4"
+      rating : "4",
+      id: "29",
    }
 ]
 
@@ -421,13 +450,12 @@ popupButton.addEventListener("click", () => {
 popupContent.append(popupHeading, popupButton);
 cartPopup.append(popupContent);
 document.body.appendChild(cartPopup);
-
     cart.addEventListener("click",function(){
       var kart = JSON.parse(localStorage.getItem("cart")) || [];
-  kart.push(product);
-  localStorage.setItem("cart", JSON.stringify(kart));
-
-  cartPopup.classList.add("active");
+      product.quantity = 1;
+      kart.push(product);
+      localStorage.setItem("cart", JSON.stringify(kart));
+      cartPopup.classList.add("active");
     });
 
     wines.append(topOfCol,wineImg,nameDiv,belowName,line,priceDiv);

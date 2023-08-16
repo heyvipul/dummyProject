@@ -42,6 +42,7 @@ body{
 #lower_nav h1{
     font-size: 32px;
     margin-top: 0px;
+    font-family: 'PT Mono', sans-serif;
 }
 #lower_nav{
     display: flex;
@@ -52,7 +53,7 @@ body{
 }
 #lower_nav div:nth-child(2){
     display: flex;
-    width: 45%;
+    width: 50%;
     justify-content: space-between;
     margin-top: -18px;
 }

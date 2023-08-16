@@ -18,7 +18,7 @@ function removeCartItem(cartItem) {
 }
 
 // Loop through each item in cart
-cartItems.forEach(function(item) {
+cartItems.forEach(function(item, index) {
     var cartItem = document.createElement("div");
     cartItem.className = "cart-item";
 
@@ -49,14 +49,16 @@ cartItems.forEach(function(item) {
     decreaseButton.textContent = "-";
     decreaseButton.addEventListener("click", function() {
         if (quantityInput.value > 1) {
-            quantityInput.value--;
+            quantityInput.value = +quantityInput.value - 1;
+            cartItems[index].quantity = quantityInput.value;
+            localStorage.setItem("cart", JSON.stringify(cartItems));
             updateTotalPrice();
         }
     });
 
     var quantityInput = document.createElement("input");
     quantityInput.type = "number";
-    quantityInput.value = 1;
+    quantityInput.value = item.quantity;
     quantityInput.addEventListener("change", function() {
         if (quantityInput.value < 1) {
             quantityInput.value = 1;
@@ -67,7 +69,9 @@ cartItems.forEach(function(item) {
     var increaseButton = document.createElement("button");
     increaseButton.textContent = "+";
     increaseButton.addEventListener("click", function() {
-        quantityInput.value++;
+        quantityInput.value = +quantityInput.value + 1;
+        cartItems[index].quantity = quantityInput.value;
+        localStorage.setItem("cart", JSON.stringify(cartItems));
         updateTotalPrice();
     });
 
@@ -182,7 +186,7 @@ function calculateSubtotal() {
 
 function updateTotalPrice() {
   var actualTotal = calculateSubtotal(); 
-
+  var totalP = 0;
   var totalPrices = document.querySelectorAll(".total-price");
   totalPrices.forEach(function(totalPriceElement) {
       var cartItem = totalPriceElement.closest(".cart-item");
@@ -191,16 +195,14 @@ function updateTotalPrice() {
       totalPriceElement.textContent = "$" + (itemPrice * quantityInput.value).toFixed(2);
       totalPriceElement.style.fontWeight = "bold";
       totalPriceElement.style.color = "black";
-
-    //   actualTotal += itemPrice * quantityInput.value; 
+      totalP = +totalP + (itemPrice * quantityInput.value); 
   });
 
   totalItemsElement.textContent = `SubTotal: (${cartItems.length} items)`;
-
-  actualSubtotal.textContent = "$" + actualTotal.toFixed(2); 
+  actualSubtotal.textContent = "$" + totalP.toFixed(2); 
   actualSubtotal.style.fontWeight = "bold";
   actualSubtotal.style.fontSize = "larger";
-  slashedPrice.innerHTML = `Discounted Price: <span class="original-price">$${(actualTotal + 1000).toFixed(2)}</span>`;
+  slashedPrice.innerHTML = `Discounted Price: <span class="original-price">$${(totalP + 1000).toFixed(2)}</span>`;
   slashedPrice.style.fontSize = "small"; 
   slashedPrice.style.color = "grey";
 }

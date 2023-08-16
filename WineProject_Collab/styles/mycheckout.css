@@ -1,5 +1,5 @@
 body{
-    font-family: 'Inconsolata', monospace;
+    font-family: 'nunito', monospace;
     background-color: rgb(247, 234, 229);
 }
 #navbar{
@@ -41,11 +41,15 @@ body{
     margin-left: 7.5%;
 }
 #main{
-    display: flex;
-    justify-content: space-between;
+    padding: 0px;
+    margin: auto;
 }
 #address{
     width: 65%;
+    border: 1px solid #1e1e1e;
+    border-radius: 5px;
+    padding: 0px;
+    margin: auto;
 }
 #address_detail{
     display: grid;
@@ -55,26 +59,30 @@ body{
     width: 100%;
     cursor: pointer;
     /* color: white; */
-    background-color: red;
+    background-color: #BF0D12;
 }
 #add:hover{
-    background-color: red;
+    background-color: #BF0D12;
     color: white;
 }
 #detail{
     display: grid;
-    width: 90%;
+    width: 93%;
+    border:1px;
+    border-radius: 2px;
+    text-align: center;
 }
 #detail input{
     padding: 10px;
     margin-bottom: 5%;
     outline: none;
-    background-color: rgb(247, 234, 229);
-    border: 2px solid rgb(180, 174, 174);
+    background-color: #FFF8E9;
+    border: 1px solid #1E1E1E;
+    font-family: 'nunito', monospace;
 }
 #detail p{
     margin-top: -5%;
-    color: red;
+    color: #BF0D12;
 }
 /* #pay{
     width: 30%;
